@@ -44,10 +44,17 @@ body {
   flex-direction: column;
   color: white;
 }
+.contact-image img {
+  width: 60vw;
+  margin: 2rem 0;
+}
 @media only screen and (max-width: 800px) {
   .main-text {
     width: 100vmin;
     text-align: center;
+  }
+  .contact-image img {
+    width: 80vw;
   }
 
   .main-image img {
@@ -67,7 +74,8 @@ body {
   }
 }
 @media only screen and (min-width: 1500px) {
-  .main-image img {
+  .main-image img,
+  .contact-image {
     width: 70%;
   }
 }
