@@ -1,14 +1,18 @@
 body {
+  text-align: center;
 }
 .main-container {
   height: 90vh;
+  max-width: 1440px;
 }
 .center-align {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+.navbar {
+  text-align: center;
+}
 .navButton {
   padding: 8px 12px;
   margin-right: 10px;
@@ -35,9 +39,10 @@ body {
   height: 100vh;
 }
 .about-container {
-  background-color: grey;
+  background-color: #578af7;
   height: 100vh;
   flex-direction: column;
+  color: white;
 }
 @media only screen and (max-width: 800px) {
   .main-text {
