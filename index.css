@@ -2,7 +2,7 @@ body {
   text-align: center;
 }
 .main-container {
-  height: 90vh;
+  height: 100vh;
   max-width: 1440px;
 }
 .center-align {
@@ -39,15 +39,29 @@ body {
   height: 100vh;
 }
 .about-container {
-  background-color: #ff6f00;
+  background-color: black;
   height: 100vh;
   flex-direction: column;
   color: white;
 }
 .contact-image img {
-  width: 60vw;
+  width: 50vw;
   margin: 2rem 0;
 }
+.link-container {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+}
+.link-container a:hover {
+  padding: 8px 12px;
+  border: 2px dashed white;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.048);
+  cursor: pointer;
+  color: #578af7;
+}
+
 @media only screen and (max-width: 800px) {
   .main-text {
     width: 100vmin;
@@ -61,21 +75,28 @@ body {
     width: 100vw;
     padding: 4rem;
   }
-  .lead {
-    padding: 0 3rem;
-  }
+
   .center-align {
     flex-wrap: wrap;
+  }
+  .lead {
+    margin: 0;
+    line-height: 1.4rem;
   }
 }
 @media only screen and (max-width: 400px) {
   .main-image img {
     padding: 1rem;
   }
+  .link-container {
+    font-size: 0.9rem;
+  }
 }
 @media only screen and (min-width: 1500px) {
-  .main-image img,
-  .contact-image {
+  .main-image img {
     width: 70%;
+  }
+  .contact-image img {
+    max-width: 1200px;
   }
 }
