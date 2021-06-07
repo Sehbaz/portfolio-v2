@@ -39,11 +39,7 @@ body {
 .main-image img {
   width: 40vw;
 }
-.work-container {
-  background-color: #f1efef;
-  min-height: fit-content;
-  flex-direction: column;
-}
+
 .about-container {
   background-color: #212121;
   height: 100vh;
@@ -68,15 +64,22 @@ body {
   cursor: pointer;
   color: #578af7;
 }
-.footer {
-  height: 20vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.work-container {
+  background-color: #f1efef;
+  min-height: fit-content;
+  flex-direction: column;
 }
+.work-main-text {
+  padding: 3rem 1rem;
+}
+
 .project-container {
   display: flex;
   padding: 1rem 0;
+  background-color: #578af76b;
+  border: 0px solid #53575f2f;
+  border-radius: 10px;
+  margin-bottom: 5vh;
 }
 .project-desc {
   width: 40vw;
@@ -102,13 +105,22 @@ body {
   margin: 0.5rem;
 }
 .project-button:hover {
-  background-color: rgba(82, 157, 255, 0.1);
+  background-color: rgba(143, 143, 143, 0.1);
   cursor: pointer;
+}
+.project-button a {
+  text-decoration: none;
+  color: black;
 }
 .project-main-image img {
   width: 70vw;
 }
-
+.footer {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media only screen and (max-width: 800px) {
   .main-text {
     width: 90vmin;
