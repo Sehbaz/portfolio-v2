@@ -118,9 +118,6 @@ body {
 .pulse {
   animation: pulse 2s infinite;
 }
-.pulse:hover {
-  animation: none;
-}
 
 @-webkit-keyframes pulse {
   0% {
