@@ -4,7 +4,7 @@ body {
 .main-container {
   height: 100vh;
   max-width: 1440px;
-  padding: 10vh 0;
+  min-height: fit-content;
 }
 .center-align {
   display: flex;
@@ -37,10 +37,11 @@ body {
 }
 .work-container {
   background-color: #eeeeee;
-  height: 100vh;
+  min-height: fit-content;
+  flex-direction: column;
 }
 .about-container {
-  background-color: black;
+  background-color: #212121;
   height: 100vh;
   flex-direction: column;
   color: white;
@@ -55,14 +56,50 @@ body {
   padding: 8px 12px;
 }
 .link-container a:hover {
-  padding: 8px 12px;
+  padding: 10px 14px;
   border: 2px dashed white;
   color: white;
   background-color: rgba(255, 255, 255, 0.048);
   cursor: pointer;
   color: #578af7;
 }
-
+.footer {
+  height: 20vh;
+  background-color: #69f0ae;
+}
+.project-container {
+  display: flex;
+  padding: 1rem 0;
+}
+.project-desc {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 2rem;
+  justify-content: center;
+  background-color: #578af7;
+  color: white;
+}
+.project-img {
+  width: 40vw;
+}
+.project-img img {
+  width: 400px;
+}
+.project-button-container {
+  display: flex;
+}
+.project-button {
+  border: 1px solid white;
+  border-radius: 1px;
+  padding: 10px;
+  margin: 0.5rem;
+}
+.project-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
 @media only screen and (max-width: 800px) {
   .main-text {
     width: 90vmin;
@@ -74,7 +111,7 @@ body {
 
   .main-image img {
     width: 80vw;
-    padding: 4rem;
+    padding: 2rem;
   }
 
   .center-align {
@@ -84,6 +121,9 @@ body {
     margin: 0;
     line-height: 1.4rem;
   }
+  .project-container {
+    flex-direction: column;
+  }
 }
 @media only screen and (max-width: 400px) {
   .main-image img {
@@ -92,6 +132,9 @@ body {
   }
   .link-container {
     font-size: 0.9rem;
+  }
+  .footer {
+    height: 12vh;
   }
 }
 @media only screen and (min-width: 1500px) {
