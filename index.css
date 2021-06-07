@@ -8,6 +8,7 @@ body {
   height: 80vh;
   max-width: 1440px;
   min-height: fit-content;
+  padding: 3rem 0;
 }
 
 .center-align {
@@ -37,7 +38,6 @@ body {
 }
 
 .wipe-ani {
-  font-weight: 100;
   letter-spacing: 2px;
   font-weight: 200;
   color: #f35626;
@@ -238,12 +238,16 @@ body {
   .footer {
     width: 50%;
   }
+  .main-container {
+    height: fit-content;
+  }
 }
 @media only screen and (max-width: 400px) {
   .main-image img {
     padding: 1rem;
-    width: 90vw;
+    width: 30vw;
   }
+
   .link-container {
     font-size: 0.9rem;
   }
