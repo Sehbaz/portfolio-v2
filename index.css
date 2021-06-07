@@ -6,6 +6,7 @@ body {
   max-width: 1440px;
   min-height: fit-content;
 }
+
 .center-align {
   display: flex;
   align-items: center;
@@ -65,7 +66,11 @@ body {
 }
 .footer {
   height: 20vh;
-  background-color: #69f0ae;
+
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .project-container {
   display: flex;
@@ -78,28 +83,30 @@ body {
   text-align: left;
   padding: 2rem;
   justify-content: center;
-  background-color: #578af7;
-  color: white;
 }
 .project-img {
   width: 40vw;
 }
 .project-img img {
-  width: 400px;
+  width: 100%;
 }
 .project-button-container {
   display: flex;
 }
 .project-button {
-  border: 1px solid white;
-  border-radius: 1px;
+  border: 1px solid black;
+  border-radius: 5px;
   padding: 10px;
   margin: 0.5rem;
 }
 .project-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(82, 157, 255, 0.1);
   cursor: pointer;
 }
+.project-main-image img {
+  width: 70vw;
+}
+
 @media only screen and (max-width: 800px) {
   .main-text {
     width: 90vmin;
