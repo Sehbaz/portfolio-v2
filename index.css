@@ -96,11 +96,12 @@ body {
 .project-container {
   display: flex;
   padding: 1rem 0;
-  background-color: #578af76b;
+  background-color: #079bf5;
   border: 0px solid #53575f2f;
   border-radius: 10px;
   margin-bottom: 5vh;
   max-width: 1440px;
+  color: white;
 }
 .project-desc {
   width: 40vw;
@@ -120,18 +121,19 @@ body {
   display: flex;
 }
 .project-button {
-  border: 1px solid black;
+  color: white;
+  border: 1px solid white;
   border-radius: 5px;
   padding: 10px;
   margin: 0.5rem;
 }
 .project-button:hover {
-  background-color: rgba(143, 143, 143, 0.1);
+  background-color: rgba(255, 255, 255, 0.322);
   cursor: pointer;
 }
 .project-button a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 .project-main-image img {
   width: 70vw;
@@ -142,7 +144,7 @@ body {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 #578af76b;
+    -webkit-box-shadow: 0 0 0 0 #079bf5;
   }
   70% {
     -webkit-box-shadow: 0 0 0 20px rgba(204, 169, 44, 0);
@@ -153,8 +155,8 @@ body {
 }
 @keyframes pulse {
   0% {
-    -moz-box-shadow: 0 0 0 0 #578af76b;
-    box-shadow: 0 0 0 0 #578af76b;
+    -moz-box-shadow: 0 0 0 0 #079bf5;
+    box-shadow: 0 0 0 0 #079bf5;
   }
   70% {
     -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
