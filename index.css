@@ -207,6 +207,9 @@ body {
     box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
   }
 }
+.app-img {
+  padding: 80px;
+}
 @media only screen and (max-width: 800px) {
   .main-text {
     width: 70vmin;
@@ -242,6 +245,9 @@ body {
   }
   .main-container {
     height: fit-content;
+  }
+  .app-img {
+    padding: 80px;
   }
 }
 @media only screen and (max-width: 400px) {
